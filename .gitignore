@@ -1,7 +1,6 @@
 ### Custom .gitignore template
 # Folders
 .idea/
-.vscode/
 node_modules/
 dist/
 build/
