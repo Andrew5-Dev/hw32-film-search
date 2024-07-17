@@ -30,7 +30,7 @@ const addMovieToList = movie => {
   item.classList.add('movie')
 
   img.classList.add('movie__image')
-  img.src = /^(http|https):\/\//i.test(movie.Poster) ? movie.Poster : 'img/no-image.png'
+  img.src = /^(http|https):\/\//i.test(movie.Poster) ? movie.Poster : 'assets/img/no-image.jpg'
   img.alt = `${movie.Title} ${movie.Year}`
   img.title = `${movie.Title} ${movie.Year}`
 
