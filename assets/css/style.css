@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+
+  text-align: center;
+
+  background-color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: min(100% - 40px, 1280px);
+  margin-top: 20px;
+  padding: 20px;
+
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px white;
+  box-shadow: 0 0 10px white;
+
+  margin-inline: auto;
+}
+
+.movies {
+  display: grid;
+
+  margin-bottom: 50px;
+
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
+  transition: -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, -webkit-transform 0.2s, -webkit-box-shadow 0.2s;
+
+  border: 1px solid #dddddd;
+}
+.movie:hover {
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+
+  -webkit-box-shadow: 0 4px 20px gray;
+  box-shadow: 0 4px 20px gray;
+}
+
+.movie__image {
+  width: 100%;
+
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.search {
+  margin-bottom: 30px;
+}
+
+.search__group--input {
+  margin-bottom: 7px;
+}
+
+.search__label-input {
+  display: block;
+
+  margin-bottom: 7px;
+}
+
+.search__input {
+  display: block;
+
+  width: 100%;
+  max-width: 400px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  padding: 10px 15px;
+
+  border: 1px solid lightsteelblue;
+  border-radius: 4px;
+}
+
+.search__label-checkbox {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  font-size: 0.8rem;
+}
+
+.search__group--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  gap: 5px;
+}

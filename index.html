@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zzx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Пошук фільмів</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Застосунок пошуку фільмів</h1>
+  <div class="search">
+    <div class="search__group search__group--input">
+      <label class="search__label-input" for="search">Пошук фільмів</label>
+      <input class="search__input" id="search" type="search" placeholder="Почніть вводити назву фільму...">
+    </div>
+    <div class="search__group search__group--checkbox">
+      <input class="search__checkbox" id="checkbox" type="checkbox">
+      <label class="search__label-checkbox" for="checkbox">Додавати фільми до вже існуючого переліку</label>
+    </div>
+  </div>
+  <div class="movies" id="movies-list"></div>
+
+</div>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
